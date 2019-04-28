@@ -1,9 +1,10 @@
 const fs = require("fs");
 const { inputFolder, outputFolder, numbers, spacing, fileIdentifier } = require("./settings");
 
+let regFI = fileIdentifier.map(el=>el.replace(/[<>*()?]/g, "\\$&"));
 let files = [];
 let input = fs.readFileSync(Object.keys(numbers).join(" - ") + ".txt", "utf8");
-let r = new RegExp("^" + fileIdentifier[0] + "(.*)" + fileIdentifier[1] + "$", "gm");
+let r = new RegExp("^" + regFI[0] + "(.*)" + regFI[1] + "$", "gm");
 
 writeToFile = (file, content) => {
   let subFolder = file.split("/");
@@ -16,7 +17,7 @@ writeToFile = (file, content) => {
 while ((a = r.exec(input)) !== null) {
   files.push(inputFolder + "/" + a[1]);
   let content = input.substr(r.lastIndex, input.length - a.index);
-  var match = new RegExp("^" + fileIdentifier[0] + "(.*)" + fileIdentifier[1] + "$", "gm").exec(content);
+  var match = new RegExp("^" + regFI[0] + "(.*)" + regFI[1] + "$", "gm").exec(content);
   if (match) content = content.substr(0, match.index);
   let lines = content.split("\n");
   lines.splice(0, spacing[0]);
