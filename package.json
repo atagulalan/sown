@@ -1,0 +1,20 @@
+{
+  "name": "sow",
+  "version": "1.0.0",
+  "description": "Create a single file from your projects",
+  "main": "index.js",
+  "bin": {
+    "sown": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atagulalan/sow.git"
+  },
+  "keywords": [],
+  "author": "atagulalan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atagulalan/sow/issues"
+  },
+  "homepage": "https://github.com/atagulalan/sow#readme"
+}

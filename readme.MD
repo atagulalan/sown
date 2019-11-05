@@ -3,6 +3,8 @@ __/səʊ/__ (verb)
 1. plant (seed) by scattering it on or in the earth.
 2. disseminate or introduce (something undesirable).
 
+This package lets you compress a folder into a readable file, and expand that file to a folder again.
+
 ##  Getting Started
 ### Prerequisites
 You need [NodeJS](https://nodejs.org/en/download/) (Version 10 or greater) on your computer.
@@ -12,8 +14,6 @@ You need [NodeJS](https://nodejs.org/en/download/) (Version 10 or greater) on yo
 Sample settings.js file:
 ```
 module.exports = {
-  folder: "input",
-  outputFolder: "output",
   numbers: {
     "XXXXXXXXX": "Someone",
     "YYYYYYYYY": "Someone Else"
@@ -28,12 +28,12 @@ module.exports = {
 ### Usage
 #### To create single file from input folder
 ```
-node compress
+npx sown compress <folder>
 ```
 
 #### To create output folder from single file
 ```
-node expand
+npx sown expand <file> -o <folder>
 ```
 Please do not forget to clear output folder before expanding another file.
 
