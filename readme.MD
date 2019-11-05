@@ -28,12 +28,12 @@ module.exports = {
 ### Usage
 #### To create single file from input folder
 ```
-npx sown compress <folder>
+npx sown compress <folder> -s <settings-file>
 ```
 
 #### To create output folder from single file
 ```
-npx sown expand <file> -o <folder>
+npx sown expand <file> -o <folder> -s <settings-file>
 ```
 Please do not forget to clear output folder before expanding another file.
 
