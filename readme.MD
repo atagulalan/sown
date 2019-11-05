@@ -28,7 +28,7 @@ module.exports = {
 ### Usage
 #### To create single file from input folder
 ```
-npx sown compress <folder>
+npx sown compress <folder> -s <settings-file>
 ```
 
 #### To create output folder from single file
