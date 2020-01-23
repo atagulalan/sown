@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/atagulalan/sow/issues"
   },
-  "homepage": "https://github.com/atagulalan/sow#readme"
+  "homepage": "https://github.com/atagulalan/sow#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
