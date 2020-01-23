@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atagulalan/sow.git"
+    "url": "git+https://github.com/atagulalan/sown.git"
   },
   "keywords": [],
   "author": "atagulalan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/atagulalan/sow/issues"
+    "url": "https://github.com/atagulalan/sown/issues"
   },
-  "homepage": "https://github.com/atagulalan/sow#readme",
+  "homepage": "https://github.com/atagulalan/sown#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }
